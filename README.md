@@ -1,2 +1,3 @@
 # ArduinoGameGear
-#(.ino files are coded in C)
+
+>(.ino files are coded in C)
