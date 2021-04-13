@@ -81,7 +81,7 @@ void loop() {
     if (duck_target->is_equal(rifle_scope)){
         lcd_key==btnNONE;
         kills++;
-        explod(duck_target->get_abs(), duck_target->get_ord());
+        duck_target->explod(&lcd);
         delete duck_target;
         duck_target = new coords();
         k=millis();

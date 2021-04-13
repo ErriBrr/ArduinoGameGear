@@ -27,24 +27,3 @@ int read_LCD_buttons(){               // read the buttons
  
     return btnNONE;                // when all others fail, return this.
 }
-
-void explod (int x, int y) {
-  lcd.clear();
-  lcd.setCursor(x, y);
-  lcd.write(3);
-  delay(150);
-  lcd.setCursor(x - 1, y);
-  lcd.write(4);
-  lcd.setCursor(x + 1, y);
-  lcd.write(5);
-  delay(600);
-  lcd.clear();
-  lcd.setCursor(x, y);
-  lcd.write(6);
-  delay(150);
-  lcd.setCursor(x - 1, y);
-  lcd.write(7);
-  lcd.setCursor(x + 1, y);
-  lcd.write(8);
-  delay(600);
-}
